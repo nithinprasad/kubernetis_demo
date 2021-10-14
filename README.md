@@ -52,34 +52,31 @@ This demo app shows a simple user profile app set up using
 	- kubectl -f apply kube.yml
 	- kubectl -f apply web.yml
 	- kubectl -f apply mongoexpress.yml
-- Find ip using
-
-		minicube ip
 - Access application using
-		
-			<ip>:30100
+			
+			{ip}:30100
 #### K8s commands
 ##### start Minikube and check status
- minikube start --vm-driver=hyperkit 
- minikube status
+	 minikube start --vm-driver=hyperkit 
+	 minikube status
 ##### get minikube node's ip address
- minikube ip
+	 minikube ip
 ##### get basic info about k8s components
- kubectl get node
- kubectl get pod
- kubectl get svc
- kubectl get all
+	 kubectl get node
+	 kubectl get pod
+	 kubectl get svc
+	 kubectl get all
 ##### get extended info about components
- kubectl get pod -o wide
- kubectl get node -o wide
+	 kubectl get pod -o wide
+	 kubectl get node -o wide
 ##### get detailed info about a specific component
- kubectl describe svc {svc-name}
- kubectl describe pod {pod-name}
+	 kubectl describe svc {svc-name}
+	 kubectl describe pod {pod-name}
 ##### get application logs
- kubectl logs {pod-name}
+	 kubectl logs {pod-name}
   
 ##### stop your Minikube cluster
- minikube stop
+	 minikube stop
 <br />
 > :warning: **Known issue - Minikube IP not accessible** 
 If you can't access the NodePort service webapp with `MinikubeIP:NodePort`, execute the following command:
