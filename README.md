@@ -2,6 +2,10 @@
 ## Demo app - developing with Docker
 ### Tutorial from [Youtube](https://www.youtube.com/watch?v=s_o8dwzRlu4&t=124s&ab_channel=TechWorldwithNana),
 This demo app shows a simple user profile app set up using 
+
+### Flow Diagram
+![Diagram](https://github.com/nithinprasad/kubernetis_demo/blob/main/flow.png?raw=true)
+
 - index.html with pure js and css styles
 - nodejs backend with express module
 - mongodb for data storage
